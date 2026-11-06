@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musical - Pure HTML, CSS & JS Exam</title>
+  <!-- Font Awesome CDN cho Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Nhúng file CSS ngoài -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="showPage('home')">
+      <i class="fa-solid fa-music"></i>
+      <span>Musical</span>
+    </div>
+    
+    <nav>
+      <a href="#" onclick="showPage('home')">About Us</a>
+      <a href="#" onclick="showPage('home')">Music</a>
+      <a href="#" onclick="showPage('home')">Albums</a>
+    </nav>
+    
+    <div class="auth-buttons">
+      <button onclick="showPage('login')" class="btn btn-primary"><a href="index.html">Sign In</a></button>
+      <button onclick="showPage('login')" class="btn btn-outline"><a href="index.html">Sign Up</a></button>
+    </div>
+  </header>
+
+  <main id="page-home">
+    
+    <div class="player-card">
+      <div class="player-controls">
+        <audio id="audio-player" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+        
+        <button id="play-btn" class="play-circle-btn">
+          <i id="play-icon" class="fa-solid fa-play"></i>
+        </button>
+
+        <div class="progress-wrapper">
+          <div class="time-display">
+            <span id="current-time">0:00</span>
+            <span id="duration">1:23</span>
+          </div>
+          <div class="progress-bg">
+            <div id="progress-bar" class="progress-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="song-details">
+        <div class="song-title-badge">
+          <i class="fa-solid fa-music"></i>
+          <span>Take me to your heart</span>
+        </div>
+        <div class="lyrics-box">
+          <p>"Take me to your heart, take me to your soul</p>
+          <p>Give me your hand before I'm old</p>
+          <p>Show me what love is, haven't got a clue</p>
+          <p>Show me that wonders can be true"</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">
+      <i class="fa-solid fa-compact-disc" style="color: #4f46e5;"></i> Danh Sách Bài Hát & Album
+    </h2>
+
+    <div class="product-grid">
+      
+      <div class="product-card">
+        <img src="img/Messi.jpg" alt="Take me to your heart">
+        <h3>Take me to your heart</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="img/Messi.jpg" alt="My love">
+        <h3>My love</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="img/Messi.jpg" alt="Cry on my shoulder">
+        <h3>Cry on my shoulder</h3>
+        <p>By Lyrical Agen</p>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="img/Messi.jpg" alt="Breathless">
+        <h3>Breathless</h3>
+        <p>SHAYNE WARD</p>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="img/Messi.jpg" alt="Until You">
+        <h3>Until You</h3>
+        <p>SHAYNE WARD</p>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="img/Messi.jpg" alt="Take me to your heart">
+        <h3>Take me to your heart</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="img/Messi.jpg" alt="Take me to your heart">
+        <h3>Take me to your heart</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="img/Messi.jpg" alt="Take me to your heart">
+        <h3>Take me to your heart</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+ 
+
+  <footer>
+    <i class="fa-solid fa-music"></i>
+    <span>Musical Entertainment</span>
+    <i class="fa-solid fa-music"></i>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

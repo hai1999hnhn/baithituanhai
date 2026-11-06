@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musical - Pure HTML, CSS & JS Exam</title>
+  <!-- Font Awesome CDN cho Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Nhúng file CSS ngoài -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="page-login" class="hidden">
+    <div class="login-container">
+      
+      <div class="login-header">
+        <h2>Đăng Nhập</h2>
+        <p>Chào mừng bạn quay trở lại với Musical</p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Đăng nhập thành công!');">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="admin@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Password" required>
+        </div>
+
+        <div class="form-options">
+          <label class="remember-me">
+            <input type="checkbox"> Remember Me
+          </label>
+          <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn-login">LOGIN</button>
+      </form>
+
+      <p class="register-text">
+        Not a member? <a href="#">Register</a>
+      </p>
+
+      <button onclick="showPage('home')" class="back-home-btn">
+        <i class="fa-solid fa-arrow-left"></i> Quay lại Trang chủ
+      </button>
+
+    </div>
+  </main>
+
+  <footer>
+    <i class="fa-solid fa-music"></i>
+    <span>Musical Entertainment</span>
+    <i class="fa-solid fa-music"></i>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
